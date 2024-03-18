@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    // The io.github.sceneview.ar.ArSceneView is a -->
+<!--    // custom view component provided by the sceneview library developed by the GitHub user io.github.-->
     <io.github.sceneview.ar.ArSceneView
         android:id="@+id/sceneView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="MissingClass"/>
+
+
+    <!-- ExtendedFloatingActionButton for placing AR objects -->
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/place"

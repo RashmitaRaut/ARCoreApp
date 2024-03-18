@@ -13,10 +13,13 @@ import io.github.sceneview.node.VideoNode
 
 class MainActivity : AppCompatActivity() {
 
-
+    // An instance of ArSceneView, which is a view for rendering Augmented Reality scenes.
     private lateinit var sceneView: ArSceneView
+    // An instance of ExtendedFloatingActionButton, used for placing the model in the AR scene.
     lateinit var placeButton: ExtendedFloatingActionButton
+    // An instance of ArModelNode, which represents a 3D model in the AR scene.
     private lateinit var modelNode: ArModelNode
+    // An instance of MediaPlayer, used for playing video content in the AR scene.
     private lateinit var videoNode: VideoNode
     private lateinit var mediaPlayer:MediaPlayer
 
@@ -47,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         modelNode = ArModelNode(sceneView.engine,PlacementMode.INSTANT).apply {
             loadModelGlbAsync(
-                glbFileLocation = "models/sofa_single.glb",
+                glbFileLocation = "models/leather_sofa.glb",
                 scaleToUnits = 1f,
                 centerOrigin = Position(-0.5f)
 
